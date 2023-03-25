@@ -55,7 +55,7 @@ export default function Register() {
                     <TextInput
                         id="firstname"
                         name="firstname"
-                        value={data.name}
+                        value={data.firstname}
                         className="mt-1 block w-full"
                         autoComplete="firstname"
                         isFocused={true}

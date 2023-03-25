@@ -31,7 +31,7 @@ export default function Login({ status, canResetPassword }) {
             <Head title="Se connecter" />
 
             {status && (
-                <div className="mb-4 font-medium text-sm text-green-600">
+                <div className="mb-2 font-medium text-sm text-green-600">
                     {status}
                 </div>
             )}
