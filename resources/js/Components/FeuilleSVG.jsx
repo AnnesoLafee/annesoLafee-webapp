@@ -1,8 +1,8 @@
-export default function FeuilleSVG({ currentColor }) {
+export default function FeuilleSVG({ currentColor, form }) {
     return (
         <svg
-            width="100px"
-            height="100px"
+            width={form ? form : "100px"}
+            height={form ? form : "100px"}
             viewBox="0 0 101 101"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"

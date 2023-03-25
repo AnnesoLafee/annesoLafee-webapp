@@ -23,6 +23,7 @@ module.exports = {
                 darkblue: "#2E5B7E",
                 orange: "#EB7F67",
                 pink: "#ffd2cc",
+                darkpink: "#ff9f9f",
             },
             backgroundImage: {
                 pngline: "url('/chartegraphique/wave-haikei.svg')",
