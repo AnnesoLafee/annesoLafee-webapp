@@ -29,6 +29,11 @@ export default function Authenticated({ user, header, children }) {
                                     Bienvenue {user.firstname + " " + user.name}{" "}
                                     !
                                 </NavLink>
+                                <img
+                                    src="/storage/avatar/Avatar.png"
+                                    className="block h-10 auto my-auto rounded-full"
+                                    alt="avatar"
+                                />
                             </div>
                         </div>
 
@@ -38,11 +43,7 @@ export default function Authenticated({ user, header, children }) {
                                     <Dropdown.Trigger>
                                         <span className="inline-flex rounded-md">
                                             {/* recuperer l'image en storage  */}
-                                            <img
-                                                src="/storage/avatar/Avatar.png"
-                                                className="h-8 w-8 rounded-full"
-                                                alt="avatar"
-                                            />
+
                                             <button
                                                 type="button"
                                                 className="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-700 focus:outline-none transition ease-in-out duration-150"
@@ -57,9 +58,9 @@ export default function Authenticated({ user, header, children }) {
                                                     <path
                                                         d="M4 17H20M4 12H20M4 7H20"
                                                         stroke="#9DD3A8"
-                                                        stroke-width="1.5"
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
+                                                        strokeWidth="1.5"
+                                                        strokeLinecap="round"
+                                                        strokeLinejoin="round"
                                                     />
                                                 </svg>
                                             </button>
