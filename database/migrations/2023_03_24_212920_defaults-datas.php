@@ -20,6 +20,15 @@ return new class extends Migration
             'firstname' => 'Anne',
             'email' => 'AnneDuchemin@test.com',
             'password' => bcrypt('password'),
+            'score' => 85,
+            'created_at' => now(),
+        ]);
+        DB::table('users')->insert([
+            'name' => 'User',
+            'firstname' => 'Test',
+            'email' => 'usertest@test.com',
+            'password' => bcrypt('password'),
+            'score' => 60,
             'created_at' => now(),
         ]);
     }
