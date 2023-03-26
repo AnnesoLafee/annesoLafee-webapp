@@ -29,6 +29,7 @@ module.exports = {
                 pngline: "url('/chartegraphique/wave-haikei.svg')",
                 svgblob: "url('/chartegraphique/blob-haikei.svg')",
                 mainpage: "url('/chartegraphique/main-page.png')",
+                val: "url('/chartegraphique/val.png')",
             },
         },
     },

@@ -2,13 +2,17 @@ import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout";
 import FeuilleSVG from "@/Components/FeuilleSVG.jsx";
 import BaguetteSVG from "@/Components/BaguetteSVG";
 import { Head } from "@inertiajs/react";
+import LoisirSVG from "@/Components/LoisirSVG";
 import SecondaryButton from "@/Components/SecondaryButton";
 import ThirdButton from "@/Components/ThirdButton";
 import UserSVG from "@/Components/UserSVG";
 import React, { useState } from "react";
 import CadeauSVG from "@/Components/CadeauSVG";
-import AssietteSVG from "@/Components/AssietteSVG";
+import MaisonSVG from "@/Components/MaisonSVG";
+import VoitureSVG from "@/Components/VoitureSVG";
+import OrdiSVG from "@/Components/OrdiSVG";
 import BouddahSVG from "@/Components/BouddahSVG";
+import AssietteSVG from "@/Components/AssietteSVG";
 
 export default function Dashboard({ auth, sentence }) {
     const [value, setValue] = useState(50); // initialisez une valeur de départ pour la plage de valeurs et créez un état pour gérer la valeur de la plage de valeurs
@@ -108,39 +112,63 @@ export default function Dashboard({ auth, sentence }) {
                 <div
                     className={
                         isButtonClicked
-                            ? "absolute z-10  top-[30%] left-[35%] shadow-md h-auto w-[25rem] flex flex-col p-8 text-center bg-lightgreen rounded-lg"
+                            ? "absolute z-10  top-[30%] left-[35%] shadow-md h-auto flex flex-col p-8 text-center bg-lightgreen rounded-lg"
                             : "hidden"
                     }
                 >
-                    <h1 className="text-xl  ">Votre score</h1>
+                    <h1 className="text-xl mb-8 ">✨ Votre score ✨ </h1>
                     <div className="flex flex-col justify-between gap-3 ">
                         <div className="flex justify-start gap-2">
+                            <div className="pr-5">
+                                <MaisonSVG></MaisonSVG>
+                            </div>
                             <FeuilleSVG currentColor="#4E8C5A" form="35" />
                             <FeuilleSVG currentColor="#4E8C5A" form="35" />
                             <FeuilleSVG currentColor="#4E8C5A" form="35" />
                             <FeuilleSVG currentColor="#FFFEF9" form="35" />
                             <FeuilleSVG currentColor="#FFFEF9" form="35" />
+                            <div className="pl-5 flex justify-center items-center">
+                                <h1 className="text-xl text-darkgreen">60%</h1>{" "}
+                            </div>
                         </div>
                         <div className="flex justify-start gap-2">
+                            <div className="pr-5">
+                                <LoisirSVG></LoisirSVG>
+                            </div>
                             <FeuilleSVG currentColor="#4E8C5A" form="35" />
                             <FeuilleSVG currentColor="#4E8C5A" form="35" />
                             <FeuilleSVG currentColor="#FFFEF9" form="35" />
                             <FeuilleSVG currentColor="#FFFEF9" form="35" />
                             <FeuilleSVG currentColor="#FFFEF9" form="35" />
+                            <div className="pl-5 flex justify-center items-center">
+                                <h1 className="text-xl text-darkgreen">40%</h1>{" "}
+                            </div>
                         </div>
                         <div className="flex justify-start gap-2">
+                            <div className="pr-5">
+                                <VoitureSVG></VoitureSVG>
+                            </div>
                             <FeuilleSVG currentColor="#4E8C5A" form="35" />
                             <FeuilleSVG currentColor="#4E8C5A" form="35" />
                             <FeuilleSVG currentColor="#4E8C5A" form="35" />
                             <FeuilleSVG currentColor="#FFFEF9" form="35" />
                             <FeuilleSVG currentColor="#FFFEF9" form="35" />
+                            <div className="pl-5 flex justify-center items-center">
+                                <h1 className="text-xl text-darkgreen">60%</h1>{" "}
+                            </div>
                         </div>
                         <div className="flex justify-start gap-2">
+                            <div className="pr-5 pl-2 text-center">
+                                <OrdiSVG></OrdiSVG>
+                            </div>
                             <FeuilleSVG currentColor="#4E8C5A" form="35" />
                             <FeuilleSVG currentColor="#4E8C5A" form="35" />
                             <FeuilleSVG currentColor="#4E8C5A" form="35" />
                             <FeuilleSVG currentColor="#4E8C5A" form="35" />
                             <FeuilleSVG currentColor="#4E8C5A" form="35" />
+                            <div className="pl-5 flex justify-center items-center">
+                                <h1 className="text-xl text-darkgreen">100%</h1>{" "}
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -154,7 +182,7 @@ export default function Dashboard({ auth, sentence }) {
                     <h1 className="text-xl ">Rechercher un service? </h1>
                     <div className="flex flex-col justify-center gap-2 grow m-auto">
                         <ThirdButton>
-                            <AssietteSVG></AssietteSVG> Menus
+                            <AssietteSVG></AssietteSVG>Menus
                         </ThirdButton>
                         <ThirdButton>
                             <CadeauSVG></CadeauSVG>Cadeaux
@@ -202,7 +230,7 @@ export default function Dashboard({ auth, sentence }) {
                             <span className="font-monserrat"> - Fred</span>
                         </p>
                     </div>
-                    <div className="flex justify-start items-center gap-5 mb-10">
+                    <div className="flex justify-start items-center gap-5 mb-5">
                         <img
                             src="/storage/avatar/face2.jpg"
                             className="h-[2.5rem] rounded-full"
