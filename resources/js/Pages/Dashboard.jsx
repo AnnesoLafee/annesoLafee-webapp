@@ -4,6 +4,7 @@ import BaguetteSVG from "@/Components/BaguetteSVG";
 import { Head } from "@inertiajs/react";
 import SecondaryButton from "@/Components/SecondaryButton";
 import ThirdButton from "@/Components/ThirdButton";
+import LoisirSVG from "@/Components/LoisirSVG";
 import React, { useState } from "react";
 
 export default function Dashboard({ auth, sentence }) {
@@ -91,21 +92,50 @@ export default function Dashboard({ auth, sentence }) {
                         <ThirdButton>Menus</ThirdButton>
                         <ThirdButton>Cadeaux</ThirdButton>
                         <ThirdButton>Bien-être</ThirdButton>
-                        <ThirdButton>
-                            <BaguetteSVG currentColor="#D2EBFF" form="1rem" />
-                            Aide domicile
-                        </ThirdButton>
+                        <ThirdButton>Aide domicile</ThirdButton>
                     </div>
                 </div>
-                <div className="col-start-6 col-end-11 row-start-3 row-end-5 bg-orange shadow-md  flex flex-col py-4 px-5 justify-between text-center rounded-md">
+                <div className="col-start-6 col-end-11 row-start-3 row-end-5 bg-orange shadow-md  flex flex-col py-4 px-10 justify-between text-center rounded-md">
                     <h1 className="my-2 text-grey-800 border-gray-300 focus:border-darkgreen text-xl focus:ring-darkgreen">
                         Des tips de notre communauté ?
                     </h1>
-
-                    <textarea
-                        placeholder="Dis nous en plus..."
-                        className="border-gray-300 resize-none font-montserrat w-4/5 m-auto rounded-md  focus:border-darkgreen focus:ring-darkgreen"
-                    ></textarea>
+                    <div className="flex justify-start items-center gap-5">
+                        <img
+                            src="/storage/avatar/face.jpg"
+                            className="h-[2.5rem] rounded-full"
+                            alt="avatar"
+                        />
+                        <p className="text-sm text-start">
+                            {" "}
+                            "Vous avez besoin d'un équipement de manière
+                            ponctuelle : avez-vous pensé au prêt entre voisins
+                            ?" <span className="font-monserrat"> - Rachel</span>
+                        </p>
+                    </div>
+                    <div className="flex justify-start items-center gap-5">
+                        <img
+                            src="/storage/avatar/face1.jpg"
+                            className="h-[2.5rem] rounded-full"
+                            alt="avatar"
+                        />
+                        <p className="text-sm text-start">
+                            {" "}
+                            "Le troc : n'achetez plus, troquez !"{" "}
+                            <span className="font-monserrat"> - Fred</span>
+                        </p>
+                    </div>
+                    <div className="flex justify-start items-center gap-5">
+                        <img
+                            src="/storage/avatar/face2.jpg"
+                            className="h-[2.5rem] rounded-full"
+                            alt="avatar"
+                        />
+                        <p className="text-sm text-start">
+                            {" "}
+                            "Votre potager : plus local, c'est pas possible !"{" "}
+                            <span className="font-monserrat"> - Octave</span>
+                        </p>
+                    </div>
                 </div>
             </div>
             {/* ajoute dans le main  */}

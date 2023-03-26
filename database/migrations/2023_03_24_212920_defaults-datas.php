@@ -31,6 +31,14 @@ return new class extends Migration
             'score' => 60,
             'created_at' => now(),
         ]);
+        DB::table('users')->insert([
+            'name' => 'DeLoire',
+            'firstname' => 'Val',
+            'email' => 'valdeloire@test.com',
+            'password' => bcrypt('password'),
+            'score' => 80,
+            'created_at' => now()
+        ]);
     }
 
     /**

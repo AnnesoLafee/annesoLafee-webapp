@@ -4,6 +4,29 @@ import Dropdown from "@/Components/Dropdown";
 import NavLink from "@/Components/NavLink";
 import ResponsiveNavLink from "@/Components/ResponsiveNavLink";
 import { Link } from "@inertiajs/react";
+// import Swal from "sweetalert";
+
+// function handleLogout() {
+//     Swal.fire({
+//         title: "Êtes-vous sûr de vouloir vous déconnecter ?",
+//         icon: "warning",
+//         showCancelButton: true,
+//         confirmButtonColor: "#3085d6",
+//         cancelButtonColor: "#d33",
+//         confirmButtonText: "Oui, déconnectez-moi !",
+//     }).then((result) => {
+//         if (result.isConfirmed) {
+//             // Envoyer la requête de déconnexion
+//             fetch(route("logout"), { method: "POST" })
+//                 .then((response) => {
+//                     // Traiter la réponse
+//                 })
+//                 .catch((error) => {
+//                     // Traiter l'erreur
+//                 });
+//         }
+//     });
+// }
 
 export default function Authenticated({ user, header, children }) {
     const [showingNavigationDropdown, setShowingNavigationDropdown] =
@@ -30,7 +53,7 @@ export default function Authenticated({ user, header, children }) {
                                     !
                                 </NavLink>
                                 <img
-                                    src="/storage/avatar/Avatar.png"
+                                    src="/storage/avatar/face3.jpg"
                                     className="block h-10 auto my-auto rounded-full"
                                     alt="avatar"
                                 />
